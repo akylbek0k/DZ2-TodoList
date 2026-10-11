@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="todo-app">
+        <div class="top">
+            <p class="label">MY TASKS</p>
+            <h1>Список задач</h1>
+            <p class="subtitle">Планируй. Выполняй. Отмечай.</p>
+        </div>
+
+        <form class="add-form" id="taskForm">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Введите новую задачу..."
+                autocomplete="off"
+            >
+            <button type="submit">Добавить</button>
+        </form>
+
+        <div class="list-header">
+            <span>ЗАДАЧИ</span>
+            <span id="counter">0 задач</span>
+        </div>
+
+        <p class="empty" id="emptyMessage">Список задач пустой</p>
+
+        <ul class="task-list" id="taskList"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
